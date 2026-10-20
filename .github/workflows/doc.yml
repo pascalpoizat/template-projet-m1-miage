@@ -1,0 +1,24 @@
+name: Documentation
+
+# Vérifie à chaque modification que la documentation se compile, et la met à disposition en artefact.
+on:
+  push:
+    paths: ['doc/**', 'documentation.md', 'site/**']
+  pull_request:
+    paths: ['doc/**', 'documentation.md', 'site/**']
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/outils-doc
+      - name: "Compilation (contrat : make -C doc produit doc/dossier.pdf)"
+        run: make -B -C doc && make -B -C doc documentation
+      - uses: actions/upload-artifact@v4
+        with:
+          name: documentation
+          path: |
+            doc/dossier.pdf
+            documentation.pdf

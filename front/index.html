@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Projet</h1><p id="version" class="discret"></p></header>
+  <p class="erreur" id="erreur" role="alert"></p>
+  <main>
+    <!-- DEBUT EXEMPLE : section du module exemple, à supprimer avec exemple.js -->
+    <section id="section-exemple">
+      <h2>Exemple : notes et mots fréquents</h2>
+      <form id="form-note">
+        <label>Titre <input name="titre" required maxlength="120"></label>
+        <label>Contenu <textarea name="contenu" rows="4"></textarea></label>
+        <button type="submit">Ajouter</button>
+      </form>
+      <ul id="liste-notes" class="liste"></ul>
+      <div id="mots-frequents"></div>
+    </section>
+    <!-- FIN EXEMPLE -->
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* Surcharge de style.css pour le guide d'utilisation (documentation.pdf, à la racine) */
+@page {
+  @top-left { content: string(titre) " · Guide d'utilisation"; }
+}
