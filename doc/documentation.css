@@ -2,3 +2,14 @@
 @page {
   @top-left { content: string(titre) " · Guide d'utilisation"; }
 }
+
+/* encadré « Ce qu'il faut retenir » en tête du guide */
+.encadre {
+  margin: 0 0 6mm;
+  padding: 4mm 5mm 2mm;
+  border-left: 1.2mm solid var(--accent);
+  border-radius: 2mm;
+  background: var(--accent-clair);
+  break-inside: avoid;
+}
+.encadre p:first-child { margin-bottom: 2mm; font-size: 10pt; }

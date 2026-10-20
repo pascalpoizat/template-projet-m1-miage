@@ -1,6 +1,6 @@
 {
   "titre": "Part IA par compétence",
-  "commentaire": "ia : part produite par l'IA (%), à mettre à jour honnêtement à chaque feature ; plafond : part IA maximale que l'équipe s'autorise (%), à discuter et fixer en équipe",
+  "commentaire": "araignée demandée par le cours, axes communs à toutes les équipes (ne pas les modifier) ; ia : part produite par l'IA (%), à mettre à jour honnêtement à chaque feature, 0 si pas d'IA ; plafond : part IA maximale que l'équipe s'autorise (%), à discuter et fixer en équipe",
   "axes": [
     { "nom": "Code",          "niveau": "bas",  "ia": 0, "plafond": 70 },
     { "nom": "Tests",         "niveau": "bas",  "ia": 0, "plafond": 60 },

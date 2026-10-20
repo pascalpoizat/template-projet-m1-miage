@@ -6,6 +6,23 @@ author:
 date: octobre 2026
 ---
 
+::: encadre
+**Ce qu'il faut retenir**
+
+- **Ce dépôt est facultatif.** Vous pouvez partir de ce modèle, n'en reprendre que des morceaux, ou faire autrement. Il en va de même pour le `CLAUDE.md` et pour l'IA générative, dont l'usage est libre, y compris ne pas en utiliser du tout.
+- **Les contraintes du cours, elles, sont obligatoires**, dans tous les cas :
+  - le planning et les rendus ;
+  - l'architecture front → API REST → back Java → BD ;
+  - une feature par personne et par itération, qui touche les quatre couches et repose sur de l'algorithmique ;
+  - la démarche idéation → back → tests → API → front ;
+  - des commits identifiés à votre compte ;
+  - un protocole d'usage de l'IA dans le dossier, et la maîtrise de tout ce que vous rendez.
+- **À cela s'ajoutent trois exigences**, que ce modèle met en place pour vous :
+  - une **page de projet** publiée ;
+  - une **documentation construite par l'intégration continue et jointe à chaque release** ;
+  - la **déclaration de la part de l'IA avec l'araignée par compétence**, même à 0 %.
+:::
+
 # À quoi sert ce dépôt
 
 Ce dépôt est un **point de départ clé en main** pour le projet de M1 MIAGE Apprentissage. Il fournit :
@@ -36,7 +53,8 @@ Le guide que vous lisez a pour source `documentation.md`, à la racine du dépô
 | | Outil de documentation (pandoc + WeasyPrint) : seul le contrat `make -C doc` compte |
 | Dossier dans `/doc`, compilé en PDF | Markdown, pandoc + WeasyPrint, feuille de style, script de l'araignée |
 | Commits identifiés au compte de chaque développeur | Rappels dans le README, le CONTRIBUTING et le `CLAUDE.md` |
-| Usage de l'IA décrit dans un protocole, maîtrise du travail produit | `CLAUDE.md`, araignée « part IA / part humaine » |
+| Usage de l'IA décrit dans un protocole, maîtrise du travail produit | `CLAUDE.md` (pour qui utilise un assistant) |
+| **Part de l'IA déclarée avec l'araignée par compétence** (10 axes, haut et bas niveau), dans le dossier et à chaque livraison, **même sans IA** (0 %) | Plafonds fixés par chaque équipe ; script de génération, ou tout autre moyen de produire le graphe |
 
 ## L'IA générative : vous êtes libres
 
@@ -47,7 +65,7 @@ L'usage de l'IA générative est **autorisé, pas obligatoire**, et chaque équi
 - un **assistant agentique** : Claude Code, ChatGPT et Codex, GitHub Copilot, Cursor… ;
 - un **modèle local** avec Ollama, voire un simple modèle de **complétion de code** dans l'éditeur.
 
-Ce qui est attendu dans tous les cas : **maîtriser ce que vous rendez**, et **décrire honnêtement** votre usage de l'IA dans le protocole du dossier. En soutenance, des questions porteront sur votre compréhension du code et des algorithmes.
+Ce qui est attendu dans tous les cas : **maîtriser ce que vous rendez**, **décrire honnêtement** votre usage de l'IA dans le protocole du dossier, et le **déclarer avec l'araignée**. Une équipe sans IA déclare 0 % sur tous les axes. En soutenance, des questions porteront sur votre compréhension du code et des algorithmes.
 
 Le `CLAUDE.md` fourni est une **proposition** de règles du jeu pour un assistant. Il le pousse à vous faire écrire le cœur des algorithmes, à avancer étape par étape et à vérifier votre compréhension. Vous pouvez :
 
@@ -210,12 +228,15 @@ Ce guide se compile de la même façon : `make -C doc documentation`.
 
 ## Pourquoi une araignée plutôt qu'un pourcentage
 
+**L'araignée est demandée par le cours**, quel que soit votre usage de l'IA. Elle accompagne le dossier à chaque livraison, et chaque feature dans sa fiche. Ses **10 axes sont communs à toutes les équipes**, ce qui rend les déclarations comparables. Les **plafonds**, eux, sont fixés par chaque équipe, et justifiés dans son protocole.
+
+
 Un pourcentage global serait biaisé : faire écrire du code par l'IA n'a pas le même poids que lui faire concevoir une solution. L'araignée sépare donc deux familles de compétences :
 
 - le **haut niveau**, sur la moitié gauche, sur fond vert : idéation, conception, spécification, algorithmique, validation ;
 - le **bas niveau**, sur la moitié droite, sur fond violet : code, tests, CI/CD, rédaction, débogage.
 
-Sur chaque axe, la **part IA réelle** (surface violette) est comparée à un **plafond** que l'équipe s'autorise (pointillés verts), plus bas pour le haut niveau. Les plafonds fournis sont des **propositions** : à vous de les fixer en équipe, et de les justifier dans le protocole.
+Sur chaque axe, la **part IA réelle** (surface violette) est comparée à un **plafond** que l'équipe s'autorise (pointillés verts), plus bas pour le haut niveau. Les plafonds fournis sont des **propositions** : à vous de les fixer en équipe, et de les justifier dans le protocole. Les axes, eux, ne changent pas.
 
 ## Mettre à jour les valeurs
 
