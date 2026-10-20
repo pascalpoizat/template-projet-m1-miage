@@ -39,6 +39,8 @@ Ce dépôt est un **point de départ clé en main** pour le projet de M1 MIAGE A
 
 Le guide que vous lisez a pour source `documentation.md`, à la racine du dépôt.
 
+**Un exemple complet** a été construit à partir de ce modèle, avec une équipe fictive : <https://github.com/pascalpoizat/premiere-impression-exemple>. Il contient un dossier de lancement rédigé, deux features livrées, 202 tests, une release v0.1.0 avec le jar et le dossier PDF, et une page de projet (<https://pascalpoizat.github.io/premiere-impression-exemple/>). Son araignée montre ce qu'il faut éviter : l'IA y dépasse les plafonds sur tous les axes.
+
 # Ce qui est imposé, et ce qui ne l'est pas
 
 **Rien dans ce dépôt n'est imposé.** Ni le template, ni le `CLAUDE.md`, ni les outils. Vous pouvez partir d'un dépôt vide, n'en reprendre que des morceaux, ou changer de framework, tant que les **règles du cours** sont respectées :

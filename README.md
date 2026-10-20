@@ -12,6 +12,10 @@ Projet M1 MIAGE Apprentissage. **Page de projet : https://ORG.github.io/REPO/** 
 ## Démarrage (dépôt modèle)
 
 > **Guide complet : [`documentation.pdf`](documentation.pdf)** (source : `documentation.md`). Rien n'y est imposé : ni ce modèle, ni le `CLAUDE.md`, ni l'usage de l'IA.
+>
+> **Aperçu de la page de projet** générée par ce modèle (squelette à compléter) : https://pascalpoizat.github.io/template-projet-m1-miage/
+>
+> **Exemple complet** construit à partir de ce modèle (équipe fictive) : [premiere-impression-exemple](https://github.com/pascalpoizat/premiere-impression-exemple), avec son [dossier](https://github.com/pascalpoizat/premiere-impression-exemple/releases/tag/v0.1.0), sa [page de projet](https://pascalpoizat.github.io/premiere-impression-exemple/) et sa release v0.1.0.
 
 Ce dépôt est un **point de départ clé en main** : back Java hexagonal testé, front web, CI, dossier compilé en PDF, suivi de la part de l'IA. Un **module d'exemple** (`exemple` : des notes et leurs mots les plus fréquents) montre toutes les couches et tous les types de tests ; ce n'est pas un modèle de feature, son algorithme est volontairement minuscule.
 
