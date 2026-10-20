@@ -34,7 +34,7 @@ Règles d'architecture, vérifiées par ArchUnit :
 ## Branches et commits
 
 - `main` : versions livrées et taguées (`v0.1.0-SNAPSHOT`, `v0.1.0`, …)
-- `develop` : intégration
+- `develop` : intégration, créée depuis `main` une fois pour toutes au démarrage (voir le README), car un dépôt créé à partir du modèle n'a que `main`
 - `feature/<issue>-<nom-court>` : une branche par feature, fusionnée dans `develop` par une pull request relue par un autre membre
 
 Avant ton premier commit, vérifie ton identité, sinon ta contribution risque de ne pas t'être attribuée :

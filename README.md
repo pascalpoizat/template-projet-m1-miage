@@ -28,6 +28,10 @@ Ce dépôt est un **point de départ clé en main** : back Java hexagonal testé
    ./outils/initialiser.sh mon-projet "MonProjet" --supprimer-exemple   # ou le retire directement
    ./gradlew build
    ```
+   Après ce commit sur `main`, créer la branche d'intégration `develop` : le modèle ne fournit que `main`.
+   ```bash
+   git switch -c develop && git push -u origin develop
+   ```
 4. Remplacer `ORG/REPO` et `SONAR_KEY` dans ce README, et renseigner `gradle.properties`.
 5. Brancher les services (facultatif mais attendu pour les badges) : secrets `CODECOV_TOKEN` et `SONAR_TOKEN` dans *Settings → Secrets and variables → Actions*. Sans eux, la CI tourne quand même, sans ces deux étapes.
 6. Activer GitHub Pages (*Settings → Pages → Source : GitHub Actions*), puis rédiger `doc/dossier.md` (`make -C doc`) et la page de projet `site/index.html`.
